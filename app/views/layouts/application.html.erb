@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Attendance</title>
+  <title>Kore Infotech Attendance System</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+  <%= link_to "Home", "root_path" %>
+  <%= link_to "Listings", "root_path" %>
+  <%= link_to "Contact Us", "root_path" %>
+  <%= link_to "Login", "root_path" %>
+  <%= link_to "FAQ", "root_path" %>
 <%= yield %>
 
 </body>
