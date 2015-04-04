@@ -1,14 +1,14 @@
 Rails.application.routes.draw do
-  get 'welcome/home'
-
-  get 'welcome/listing'
-
-  get 'welcome/contactus'
-
-  get 'welcome/faq'
-
+  
+  get "welcome/home"
+  get "welcome/listing"
+  get "welcome/contactus"
+  get "welcome/faq"
+  
+  
   resources :users
-  root to: 'users#index'
+  #  root to: 'users#index'   # first declaration
+  root to: 'welcome#home'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
